@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="600.0" minWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.todotechfe.controllers.VentanaInicioController">
+   <Pane prefHeight="80.0" prefWidth="1000.0" style="-fx-background-color: #152a45;">
+      <children>
+         <ImageView fx:id="btnCerrarSesion" fitHeight="50.0" fitWidth="50.0" layoutX="920.0" layoutY="16.0" onMouseClicked="#cerrarSesion">
+            <image>
+               <Image url="@../../../../imagenes/Cerrar%20Sesion.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+         <Text fill="WHITE" layoutX="54.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido de nuevo">
+            <font>
+               <Font name="HP Simplified Jpan Light" size="40.0" />
+            </font>
+         </Text>
+      </children>
+   </Pane>
+   <Pane layoutX="681.0" layoutY="81.0" prefHeight="520.0" prefWidth="320.0" style="-fx-background-color: #e3e6e8;">
+      <children>
+         <ImageView fitHeight="284.0" fitWidth="300.0" layoutX="10.0" layoutY="14.0">
+            <image>
+               <Image url="@../../../../imagenes/Logo%20TodoTechShop.png" />
+            </image>
+         </ImageView>
+         <Text layoutX="116.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PQRS">
+            <font>
+               <Font name="HP Simplified Jpan Light" size="40.0" />
+            </font>
+         </Text>
+         <ImageView fx:id="btnPQRS" fitHeight="150.0" fitWidth="150.0" layoutX="85.0" layoutY="307.0">
+            <image>
+               <Image url="@../../../../imagenes/Peticion.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+      </children>
+   </Pane>
+   <Pane layoutY="81.0" prefHeight="520.0" prefWidth="680.0">
+      <children>
+         <ImageView fx:id="btnClientes" fitHeight="150.0" fitWidth="150.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#abrirVentanaClientes">
+            <image>
+               <Image url="@../../../../imagenes/Clientes.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+         <ImageView fx:id="btnCarrito" fitHeight="150.0" fitWidth="150.0" layoutX="265.0" layoutY="14.0" onMouseClicked="#abrirVentanaCarrito">
+            <image>
+               <Image url="@../../../../imagenes/Carrito%20de%20Compras.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+         <ImageView fx:id="btnProductos" fitHeight="150.0" fitWidth="150.0" layoutX="516.0" layoutY="8.0" onMouseClicked="#abrirVentanaProductos">
+            <image>
+               <Image url="@../../../../imagenes/Productos.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+         <ImageView fx:id="btnBodegas" fitHeight="150.0" fitWidth="150.0" layoutX="14.0" layoutY="274.0" onMouseClicked="#abrirVentanaBodegas">
+            <image>
+               <Image url="@../../../../imagenes/Bodega.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+         <ImageView fx:id="btnEnvios" fitHeight="150.0" fitWidth="150.0" layoutX="265.0" layoutY="274.0" onMouseClicked="#abrirVentanaEnvios">
+            <image>
+               <Image url="@../../../../imagenes/Envios.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+         <ImageView fx:id="btnGestionProductos" fitHeight="150.0" fitWidth="150.0" layoutX="516.0" layoutY="274.0" onMouseClicked="#abrirVentanaGestionarProductos">
+            <image>
+               <Image url="@../../../../imagenes/Gestion%20Productos.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+         <Text layoutX="25.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
+            <font>
+               <Font name="HP Simplified Jpan Light" size="40.0" />
+            </font>
+         </Text>
+         <Text layoutX="286.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carrito">
+            <font>
+               <Font name="HP Simplified Jpan Light" size="40.0" />
+            </font>
+         </Text>
+         <Text layoutX="509.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Productos">
+            <font>
+               <Font name="HP Simplified Jpan Light" size="40.0" />
+            </font>
+         </Text>
+         <Text layoutX="19.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bodegas">
+            <font>
+               <Font name="HP Simplified Jpan Light" size="40.0" />
+            </font>
+         </Text>
+         <Text layoutX="288.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envios">
+            <font>
+               <Font name="HP Simplified Jpan Light" size="40.0" />
+            </font>
+         </Text>
+         <Text layoutX="569.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GP">
+            <font>
+               <Font name="HP Simplified Jpan Light" size="40.0" />
+            </font>
+         </Text>
+         <Separator layoutX="677.0" orientation="VERTICAL" prefHeight="520.0" prefWidth="8.0" />
+      </children>
+   </Pane>
+</AnchorPane>
